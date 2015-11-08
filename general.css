@@ -1,0 +1,238 @@
+/*general page styles*/
+body {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+}
+
+button, 
+button:active, 
+button:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{
+    outline: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+.space-after {
+  margin-bottom: 30px;
+}
+a {
+  text-decoration: none;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px;
+}
+a:hover, a:focus, #navigation-link a:hover, #navigation-link a:focus {
+  text-decoration: underline;
+}
+.text-thin {
+  font-weight: 100;
+}
+.text-medium {
+  font-weight: 400;
+}
+.text-indent {
+  text-indent: 2em;
+}
+/*header styles*/
+header img {
+  margin-top: 20px;
+}
+header hr {
+  border-top: 2px solid #BCBBBB;
+}
+/*navigation styles*/
+.navbar-nav {
+  margin: 0;
+}
+.navbar-default {
+  position: relative;
+  top: -20px;
+  margin-bottom: 0;
+}
+nav a {
+ font-family: 'Lato', sans-serif; 
+ font-size: 14px;
+ padding-right: 30px;
+ padding-left: 0;
+}
+#print-button {
+  margin-right: 0;
+}
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+/*about section styles*/
+#about main {
+  border-left: 2px solid #BCBBBB;
+}
+#about table {
+    table-layout: auto;
+}
+#about table td {
+  border-top: none;
+}
+.about-gallery {
+  padding: 0;
+  height: 200px;
+}
+a.block {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+img.string {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+#about figcapture {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  line-height: 200px;
+}
+.center {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+.column-1 {
+  width: 35%;
+}
+.column-2 {
+  width: 65%;
+}
+/*portfolio styles*/
+#gallery a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+#gallery img {
+  width: 360px;
+  height: 200px;
+}
+@media screen and (max-width: 991px) {
+  #gallery h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.padded {
+  position: relative;
+  height: 41px;
+  background-image: url("images/line.svg");
+  background-size: cover;
+}
+#positioned {
+  position: absolute;
+  top: 20px;
+  height: 0px;
+  width: 100%;
+}
+#showMore, #showLess {
+  position: absolute;
+  top: -5px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  box-shadow: none;
+  border: 1px solid #BCBBBB;
+  border-radius: 50%;
+}
+button#showMore :hover :active {
+  width: 60px;
+  height: 60px;
+  top: -10px;
+  border-radius: 50%;
+}
+#collapseGallery {
+  position: relative;
+  top: 60px;
+  margin-bottom: 60px;
+}
+/*experience styles and education*/
+#accordion a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+@media screen and (max-width: 768px) {
+  #accordion td {
+    display: table-row;
+  }
+}
+.table-style-content{
+  position: relative;
+  margin-left: 16.66666667%;
+  margin-right: 16.66666667%;
+  padding: 0;
+  border-top: 1px solid #BCBBBB;
+}
+.table-style-content .wrapper {
+  border-bottom: 1px solid #BCBBBB;
+}
+.term-ed {
+  margin: 15px 0;
+  padding-left: 10px;
+  float: left;
+  width: 30%;
+}
+.employer-ed { 
+  margin: 15px 0;
+  padding-left: 10px;
+  float: right;
+  width: 70%;
+  border-left: 1px solid #BCBBBB;
+}
+@media screen and (max-width: 650px) {
+  .term-ed, .employer-ed {
+    width: 100%;
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+  }
+}
+/*reference styles*/
+#myCarousel {
+  height: 250px;
+  line-height: 250px;
+  background-image: url("images/sky.jpg");
+}
+#myCarousel p {
+  color: #2b2d2c;
+}
+#myCarousel ol {
+  margin-bottom: -120px;
+}
+.carousel-inner {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: bottom;
+}
+div.item {
+  height: 200px;
+  line-height: 200px;
+}
+div.item p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/*Contact*/
+#contact {
+  margin: 0 2% 0 14.666667%;
+}
