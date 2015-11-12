@@ -1,7 +1,7 @@
 /*general page styles*/
 body {
-font-family: 'Lato', sans-serif;
-font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 button, 
@@ -17,140 +17,138 @@ button:focus,
 }
 
 .wrapper {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .space-after {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 a {
-  text-decoration: none;
-  font-family: 'Cutive Mono', monospace;
-  font-size: 20px;
+    text-decoration: none;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
 }
 
 a:hover, 
-a:focus, 
-#navigation-link a:hover, 
-#navigation-link a:focus {
-  text-decoration: underline;
+a:focus {
+    text-decoration: underline;
 }
 
 .text-thin {
-  font-weight: 100;
+    font-weight: 100;
 }
 
 .text-medium {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .text-indent {
-  text-indent: 2em;
+    text-indent: 2em;
 }
 
 /*header styles*/
 header img {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 header hr {
-  border-top: 2px solid #bcbbbb;
+    border-top: 2px solid #bcbbbb;
 }
 
 /*navigation styles*/
 .navbar-nav {
-  margin: 0;
+    margin: 0;
 }
 
 .navbar-default {
-  position: relative;
-  top: -20px;
-  margin-bottom: 0;
+    position: relative;
+    top: -20px;
+    margin-bottom: 0;
 }
 
 nav a {
- font-family: 'Lato', sans-serif; 
- font-size: 14px;
- padding-right: 30px;
- padding-left: 0;
+    font-family: 'Lato', sans-serif; 
+    font-size: 14px;
+    padding-right: 30px;
+    padding-left: 0;
 }
 
 #print-button {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .navbar-toggle {
-  float: left;
-  margin-left: 15px;
+    float: left;
+    margin-left: 15px;
 }
 
 /*about section styles*/
  main {
-  border-left: 2px solid #bcbbbb;
+    border-left: 2px solid #bcbbbb;
 }
 
- .table-skills {
+.table-skills {
     table-layout: auto;
 }
 
 .column-1 {
-  padding-left: 0;
+    padding-left: 0;
 }
 
- .table-skills td {
-  border-top: none;
-  padding-top: 15px;
+.table-skills td {
+    border-top: none;
+    padding-top: 15px;
 }
 
 .about-gallery {
-  padding: 0;
-  height: 200px;
+    padding: 0;
+    height: 200px;
 }
 
 .block {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 20;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
 }
 
 .string {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
 
 #about figcaption {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: .5;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  line-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    line-height: 200px;
 }
 
 .center {
-  line-height: normal;
-  display: inline-block;
-  vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /*portfolio styles*/
 #gallery a {
-  display: inline-block;
-  margin-bottom: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 #gallery img {
-  width: 360px;
-  height: 200px;
+    width: 360px;
+    height: 200px;
 }
 
 @media screen and (max-width: 991px) {
@@ -161,78 +159,63 @@ nav a {
 }
 
 .padded {
-  position: relative;
-  height: 41px;
-  background-image: url("images/line.svg");
-  background-size: cover;
-}
-
-#positioned {
-  position: absolute;
-  top: 20px;
-  height: 0px;
-  width: 100%;
+    position: relative;
+    height: 41px;
+    background-image: url("images/line.svg");
+    background-size: cover;
 }
 
 #showMore, 
 #showLess {
-  position: absolute;
-  top: -5px;
-  margin-left: -25px;
-  width: 50px;
-  height: 50px;
-  box-shadow: none;
-  border: 1px solid #bcbbbb;
-  border-radius: 50%;
-}
-
-button#showMore :hover,
-button#showMore:active {
-  width: 60px;
-  height: 60px;
-  top: -10px;
-  border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    box-shadow: none;
+    border: 1px solid #bcbbbb;
+    border-radius: 50%;
 }
 
 #collapseGallery {
-  position: relative;
-  top: 60px;
-  margin-bottom: 60px;
+    position: relative;
+    top: 60px;
+    margin-bottom: 60px;
 }
 
 /*experience styles and education*/
-#accordion a {
-  text-decoration: none;
-  font-family: inherit;
-  font-size: inherit;
+.panel-group a {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 @media screen and (max-width: 768px) {
-  #accordion td {
+  .panel-group td {
     display: table-row;
   }
 }
 
 .table-style-content {
-  position: relative;
-  margin-left: 16.66666667%;
-  margin-right: 16.66666667%;
-  padding: 0;
+    position: relative;
+    margin-left: 16.66666667%;
+    margin-right: 16.66666667%;
+    padding: 0;
 }
 
 .term-ed {
-  margin: 15px 0;
-  padding-left: 10px;
-  float: left;
-  width: 30%;
+    margin: 15px 0;
+    padding-left: 10px;
+    float: left;
+    width: 30%;
 }
 
 .employer-ed { 
-  margin: 15px 0;
-  padding-left: 10px;
-  float: right;
-  width: 70%;
-  border-left: 1px solid #bcbbbb;
+    margin: 15px 0;
+    padding-left: 10px;
+    float: right;
+    width: 70%;
+    border-left: 1px solid #bcbbbb;
 }
 
 @media screen and (max-width: 650px) {
@@ -246,41 +229,41 @@ button#showMore:active {
 }
 
 /*reference styles*/
-#myCarousel {
-  height: 250px;
-  line-height: 250px;
-  background-image: url("images/sky.jpg");
+.carousel {
+    height: 250px;
+    line-height: 250px;
+    background-image: url("images/sky.jpg");
 }
 
-#myCarousel p {
-  color: #2b2d2c;
+.carousel-inner p {
+    color: #2b2d2c;
 }
 
-#myCarousel ol {
-  margin-bottom: -120px;
+.carousel-indicators {
+    margin-bottom: -120px;
 }
 
 .carousel-inner {
-  width: 60%;
-  margin-left: 20%;
-  margin-bottom: 5%;
-  line-height: normal;
-  display: inline-block;
-  vertical-align: bottom;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .item {
-  height: 200px;
-  line-height: 200px;
+    height: 200px;
+    line-height: 200px;
 }
 
 .item p {
-  line-height: normal;
-  display: inline-block;
-  vertical-align: bottom;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 /*Contact*/
 #contact {
-  margin: 0 2% 0 14.666667%;
+    margin: 0 2% 0 14.666667%;
 }
