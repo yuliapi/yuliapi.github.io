@@ -1,18 +1,19 @@
 /*general page styles*/
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
 }
 
-button, 
-button:active, 
-button:focus, 
-.btn:focus, 
-.btn:active:focus, 
-.btn.active:focus, 
-.btn.focus, 
-.btn:active.focus, 
-.btn.active.focus{
+button,
+button:active,
+button:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
     outline: none;
 }
 
@@ -26,11 +27,11 @@ button:focus,
 
 a {
     text-decoration: none;
-    font-family: 'Cutive Mono', monospace;
+    font-family: "Cutive Mono", monospace;
     font-size: 20px;
 }
 
-a:hover, 
+a:hover,
 a:focus {
     text-decoration: underline;
 }
@@ -48,6 +49,7 @@ a:focus {
 }
 
 /*header styles*/
+
 header img {
     margin-top: 20px;
 }
@@ -57,8 +59,21 @@ header hr {
 }
 
 /*navigation styles*/
+
 .navbar-nav {
     margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .navbar-default {
@@ -68,23 +83,23 @@ header hr {
 }
 
 nav a {
-    font-family: 'Lato', sans-serif; 
+    font-family: "Lato", sans-serif;
     font-size: 14px;
     padding-right: 30px;
-    padding-left: 0;
 }
 
-#print-button {
+.print-button {
     margin-right: 0;
 }
 
 .navbar-toggle {
-    float: left;
     margin-left: 15px;
 }
 
+
 /*about section styles*/
- main {
+
+main {
     border-left: 2px solid #bcbbbb;
 }
 
@@ -103,7 +118,32 @@ nav a {
 
 .about-gallery {
     padding: 0;
-    height: 200px;
+    min-height: 200px;
+}
+
+.about-gallery figcaption {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    .about-gallery {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-gallery {
+        height: 200px;
+    }
 }
 
 .block {
@@ -123,39 +163,21 @@ nav a {
     top: 0;
 }
 
-#about figcaption {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: .5;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    line-height: 200px;
-}
-
-.center {
-    line-height: normal;
-    display: inline-block;
-    vertical-align: middle;
-}
-
 /*portfolio styles*/
-#gallery a {
+
+.portfolio-gallery a {
     display: inline-block;
     margin-bottom: 15px;
 }
 
-#gallery img {
+.portfolio-gallery img {
     width: 360px;
-    height: 200px;
 }
 
 @media screen and (max-width: 991px) {
-  #gallery h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+    .portfolio-gallery h3 {
+        margin: 5px 0;
+    }
 }
 
 .padded {
@@ -165,8 +187,7 @@ nav a {
     background-size: cover;
 }
 
-#showMore, 
-#showLess {
+.portfolio-gallery button {
     position: absolute;
     top: -5px;
     margin-left: -25px;
@@ -177,13 +198,14 @@ nav a {
     border-radius: 50%;
 }
 
-#collapseGallery {
+.collapse-content {
     position: relative;
     top: 60px;
     margin-bottom: 60px;
 }
 
 /*experience styles and education*/
+
 .panel-group a {
     text-decoration: none;
     font-family: inherit;
@@ -191,15 +213,14 @@ nav a {
 }
 
 @media screen and (max-width: 768px) {
-  .panel-group td {
-    display: table-row;
-  }
+    .panel-group td {
+        display: table-row;
+    }
 }
 
 .table-style-content {
     position: relative;
-    margin-left: 16.66666667%;
-    margin-right: 16.66666667%;
+    margin: 0 16.66666667%;
     padding: 0;
 }
 
@@ -210,7 +231,7 @@ nav a {
     width: 30%;
 }
 
-.employer-ed { 
+.employer-ed {
     margin: 15px 0;
     padding-left: 10px;
     float: right;
@@ -219,16 +240,16 @@ nav a {
 }
 
 @media screen and (max-width: 650px) {
-  .term-ed, .employer-ed {
-    width: 100%;
-    border-left: none;
-    padding-left: 0;
-    padding-right: 0;
-    display: inline-block;
-  }
+    .term-ed,
+    .employer-ed {
+        width: 100%;
+        border-left: none;
+        display: inline-block;
+    }
 }
 
 /*reference styles*/
+
 .carousel {
     height: 250px;
     line-height: 250px;
@@ -245,8 +266,7 @@ nav a {
 
 .carousel-inner {
     width: 60%;
-    margin-left: 20%;
-    margin-bottom: 5%;
+    margin: 0 0 5% 20%;
     line-height: normal;
     display: inline-block;
     vertical-align: bottom;
@@ -264,6 +284,7 @@ nav a {
 }
 
 /*Contact*/
-#contact {
+
+.contact {
     margin: 0 2% 0 14.666667%;
 }
