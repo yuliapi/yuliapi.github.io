@@ -1,5 +1,4 @@
 /*general page styles*/
-
 body {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -49,7 +48,6 @@ a:focus {
 }
 
 /*header styles*/
-
 header img {
     margin-top: 20px;
 }
@@ -59,7 +57,6 @@ header hr {
 }
 
 /*navigation styles*/
-
 .navbar-nav {
     margin: 0;
 }
@@ -98,7 +95,6 @@ nav a {
 
 
 /*about section styles*/
-
 main {
     border-left: 2px solid #bcbbbb;
 }
@@ -164,7 +160,6 @@ main {
 }
 
 /*portfolio styles*/
-
 .portfolio-gallery a {
     display: inline-block;
     margin-bottom: 15px;
@@ -205,7 +200,6 @@ main {
 }
 
 /*experience styles and education*/
-
 .panel-group a {
     text-decoration: none;
     font-family: inherit;
@@ -249,7 +243,6 @@ main {
 }
 
 /*reference styles*/
-
 .carousel {
     height: 250px;
     line-height: 250px;
@@ -284,7 +277,6 @@ main {
 }
 
 /*Contact*/
-
 .contact {
     margin: 0 2% 0 14.666667%;
 }
