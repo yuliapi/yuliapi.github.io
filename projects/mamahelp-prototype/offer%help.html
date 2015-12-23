@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мама Help. Пропоную допомогу</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="general.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="header">
+      <div class="col-md-3">
+        <img class="pull-left logo" src="http://placehold.it/70x70">
+        <h1> Mama Help</h1>
+      </div>
+
+
+
+      <!---Navigation in header--------------->
+      <div class="col-md-5" <nav class="navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about-project-ancor">Про проект</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a>Форум</a></li>
+        </ul>
+        </nav>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a class="hidden" href="index%registration.html">Реєстрація</a></li>
+          <li><a class="hidden" href="index%registration.html">Вхід</a></li>
+          <li><a>Приватний кабінет</a></li>
+        </ul>
+        <div class="col-md-6">
+          <input type="search" class="form-control" id="site-search" placeholder="Пошук по сайту">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----main image section------>
+  <div class="container-fluid">
+    <div class="row  main-img after-scroll relative">
+      <div class="col-md-12 text-center btn-holder">
+
+        <a href="search%help.html" type="button" class="btn btn-default btn-main">Шукати допомогу</a>
+        <a href="offer%help.html" type="button" class="btn btn-default btn-main">Запропонувати допомогу</a>
+
+      </div>
+    </div>
+  </div>
+  <!------Search form-------------->
+  <div class="container-fluid">
+    <div class="row relative">
+      <div class="col-md-8 main-content">
+        <div class="col-md-12">
+          <p class="my-comments">Тут две формы. Первая - отправляет заявку возможного помощника в базу. Вторая фильтрует и выдает подходящие варианты - кому требуется помощь. Нажми кнопку Submit (нижнюю, от второй формы). Формы будут выпадающими в зависимости от выбора пользователя
+            (первая или вторая)
+            <br>
+          </p>
+          <button class="special-btn">Стати можливим помiчником</button>
+          <h3><strong>Форма 1</strong> Пошук потребуючих допомоги</h3>
+
+          <form>
+            <div class="form-group">
+              <label for="cityDistrict">Ваше місто</label>
+              <select class="form-control">
+                <option>City 1</option>
+                <option>City 2</option>
+                <option>City 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cityDistrict">Оберіть район міста</label>
+              <select class="form-control">
+                <option>District 1</option>
+                <option>District 2</option>
+                <option>District 3</option>
+                <option>District 4</option>
+                <option>District 5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cityDistrict">День тижня</label>
+              <select class="form-control">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Понеділок
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Вівторок
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> Середа
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> Четвер
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> П'ятниця'
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> Субота
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3"> Неділя
+                </label>
+              </select>
+            </div>
+            <hr>
+            <div class="form-group">
+              <label for="time">Визначте приблизний час</label>
+              <select class="form-control">
+                <option>Перша половина дня</option>
+                <option>Друга половина дня</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="HelpDescription">Oпис запропонованої допомоги:</label>
+              <textarea class="form-control" rows="3">Напишить щось</textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+
+          <hr>
+
+          <button class="special-btn">Шукати серед наявних замовлень</button>
+          <h3><strong>Форма 2</strong></h3>
+          <form>
+            <div class="form-group">
+              <label for="cityDistrict">Ваше місто</label>
+              <select class="form-control">
+                <option>City 1</option>
+                <option>City 2</option>
+                <option>City 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cityDistrict">Оберіть район міста</label>
+              <select class="form-control">
+                <option>District 1</option>
+                <option>District 2</option>
+                <option>District 3</option>
+                <option>District 4</option>
+                <option>District 5</option>
+              </select>
+            </div>
+            <a href="needed%help%rez.html" type="button" class="btn btn-default">Submit</a>
+          </form>
+          <hr>
+
+        </div>
+      </div>
+      <!-------SideBar---------->
+      <div class="col-md-4 side-bar">
+        <div>
+          <h4>Recent stories</h4>
+          <div class="top-indent">
+            <h5>
+              <strong>Ice creem forever!!!</strong>
+            </h5>
+            <em>Jelly sugar plum topping. Jelly beans candy... <a>Read article</a></em>
+          </div>
+          <div class="top-indent">
+            <h5>
+              <strong>Kids like veggies, are you kidding me?!</strong>
+            </h5>
+            <em>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi...<a>Read article</a></em>
+          </div>
+          <div class="top-indent">
+            <h5>
+              <strong>Best gifts for 6th to 9th birthday</strong>
+            </h5>
+            <em>Eat stuck in a tree lick biting shed everywhere sleep on your keyboard...<a>Read article</a></em>
+          </div>
+          <hr>
+        </div>
+        <!--- Tag cloud------------->
+        <div class="clearfix top-indent">
+          <h4 class="pull-left">Article tag cloud</h4>
+          <a class="pull-right">Learn more</a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a>Entry1</a>
+            </li>
+            <li>
+              <a>Interesting fact</a>
+            </li>
+            <li>
+              <a>Some tag</a>
+            </li>
+            <li>
+              <a>Kids</a>
+            </li>
+            <li>
+              <a>Entry2</a>
+            </li>
+            <li>
+              <a>blah-blah-blah</a>
+            </li>
+            <li>
+              <a>Something</a>
+            </li>
+            <li>
+              <a>just do it</a>
+            </li>
+            <li>
+              <a>Y'd like</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <!----Footer menu---------->
+        <hr>
+        <div>
+          <nav class="navbar navbar-static-top">
+            <ul class="nav navbar-nav">
+              <li><a>Home</a></li>
+              <li><a href="#about-project-ancor">Про проект</a></li>
+              <li><a>Блог</a></li>
+              <li><a>Звязок з адміністрацією</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>

@@ -1,0 +1,87 @@
+.logo, .profile-photo {
+  margin: 10px 20px 0 0;
+}
+#site-search {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.relative {
+  position: relative;
+}
+.main-img {
+  background-image: url("http://placehold.it/1000x600");
+  height: 500px;
+  margin-bottom: 40px
+}
+.btn-holder {
+  margin-top: 290px;
+}
+.after-scroll {
+  height: 200px;
+}
+.after-scroll .btn-holder {
+  position: absolute;
+  top: -95%;
+}
+.btn-main {
+  background-color: red;
+  color: white;
+  height: 70px;
+  width: 300px;
+  font-size: 24px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 90px;
+}
+.main-content {
+  overflow: hidden;
+  padding: 0 10%;
+}
+.side-bar {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  background-color: #F4DCFC;
+  margin-top: -3.2%;
+}
+.cover {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 900;
+}
+.login-block {
+  padding: 0 37.5%;
+}
+.opaque {
+  opacity: 1;
+}
+.rezult {
+  overflow: hidden;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  margin: 50px 20px;
+}
+#header {
+  padding: 10px 0;
+}
+.map-rezults {
+  background-image: url("http://placehold.it/450x300");
+  height: 400px;
+}
+.top-indent {
+  margin-top: 40px;
+}
+.my-comments {
+  font-size: 16px;
+  color: #ED2E2B;
+}
+.map {
+  background-image: url("http://placehold.it/400x300");
+}
