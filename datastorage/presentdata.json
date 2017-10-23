@@ -1,21 +1,21 @@
 {
   "wishes": {
-    "happy": 5,
-    "wise": 6,
+    "happy": 29,
+    "wise": 26,
     "lucky": 2,
     "strong": 3,
     "fast": 1,
     "smart": 2,
-    "awesome": 6,
-    "healthy": 4,
-    "creative": 5,
-    "clever": 3,
-    "amazing": 4,
-    "unpredictable": 2,
-    "critical": 2,
-    "loved": 1,
-    "interesting": 5,
-    "complicated": 1
+    "awesome": 27,
+    "healthy": 10,
+    "creative": 25,
+    "clever": 18,
+    "amazing": 24,
+    "unpredictable": 15,
+    "critical": 12,
+    "loved": 10,
+    "interesting": 17,
+    "complicated": 15
   },
   "colors": [
     "#66023C",
