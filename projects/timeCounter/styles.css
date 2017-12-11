@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(252, 240, 228);
+    background: -moz-radial-gradient(white, transparent 16%),
+    -moz-radial-gradient(white, transparent 16%),
+    rgb(252, 240, 228);
+    background: -webkit-radial-gradient(white, transparent 16%),
+    -webkit-radial-gradient(white, transparent 16%),
+    rgb(252, 240, 228);
+    background-position: 0 0, 25px 25px;
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    overflow: hidden;
+}
+
+/********************Helper classes*********************/
+span {
+    padding: 0 5px;
+}
+.invisible {
+    visibility: hidden;
+}
+.content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.wrapper {
+    display: block;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+.circle {
+    background-color: aqua;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle-minion {
+    height: 300px;
+    width: 300px;
+}
+
+/**************Spin-counter styles***************************/
+/*https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/*/
+.spin-wrapper {
+
+    width: 26em;
+    height: 26em;
+    margin: auto;
+
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.spin-wrapper ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.spin-sector {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    font-size: 1.5em;
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.spin-sector .content {
+    display: block;
+    height: 16.5em;
+    width: 16.5em;
+    position: absolute;
+    bottom: -7.75em;
+    right: -6.75em;
+    background-color: cadetblue;
+    transform: var(--transformContent);
+    /*transform: skew(-60deg) rotate(-75deg) scale(1);*/
+    border-radius: 50%;
+    padding-top: 2em;
+}
+.spin-sector:nth-child(n) {
+    transform:  var(--transformSector);
+}
+
+

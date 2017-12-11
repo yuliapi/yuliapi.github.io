@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <link rel="icon" href="images/cake.png">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<main>
+    <div class="content">
+        <span>Count </span>
+        <select id="timeToCount">
+            <option value="15">15 seconds</option>
+            <option value="30" selected='selected'>30 seconds</option>
+            <option value="60">1 minute</option>
+            <option value="120">2 minutes</option>
+        </select>
+        <span>by</span>
+        <select id="countInterval">
+            <option value="1">1 second</option>
+            <option value="2">2 seconds</option>
+            <option value="3">3 seconds</option>
+            <option value="5">5 seconds</option>
+        </select>
+        <button onclick=calculate()>Start</button>
+        <button onclick=reset()>Cancel</button>
+        <p id="time" style="height: 20px;"></p>
+        <div class="wrapper" style="position: relative; height: 400px">
+            <div class="spin-wrapper">
+                <ul id="pie"></ul>
+            </div>
+            <div class="circle circle-minion" style="line-height: 300px; position: relative; bottom:360px">
+                <img class="sticker" src="images/minionWait.png" style="vertical-align: middle">
+            </div>
+        </div>
+        <div id = "btn-holder" class = "invisible" style="position: relative; top: 40px;">
+            <button id = "pauseBtn" onclick=pause()>Pause</button>
+            <button id="resumeBtn" onclick=resume()>Resume</button>
+        </div>
+
+    </div>
+</main>
+
+</body>
+<script>
+    var keepCounting = 1;
+    var selectedTime;
+    var interval;
+    var childNum = 0;
+    var centralAngle;
+    var counter = 0;
+    var myTimer;
+
+    function calculate() {
+        reset();
+        keepCounting = 1;
+        selectedTime = parseInt(getSelected('timeToCount'));
+        interval = parseInt(getSelected('countInterval'));
+        var numberOfItems = selectedTime / interval;
+        centralAngle = 360 / numberOfItems;
+        document.getElementById("time").innerHTML = selectedTime;
+        document.getElementById("btn-holder").classList.remove("invisible")
+        countdown()
+    }
+    function getSelected(e) {
+        var selected = document.getElementById(e);
+        return (selected.options[selected.selectedIndex].value)
+    }
+
+    function countdown() {
+        if (keepCounting === -1) {
+            return;
+        }
+        selectedTime--;
+        document.getElementById("time").innerHTML = selectedTime;
+        counter++;
+        if (counter === interval) {
+            counter = 0;
+            updateProgress();
+            childNum++;
+        }
+        if (selectedTime === 0) {
+            var text = "done!";
+            document.getElementById("time").innerHTML = text.charAt(0).toUpperCase() + text.slice(1);
+            document.getElementById("btn-holder").classList.add("invisible")
+            keepCounting = -1;
+            return
+        }
+        myTimer = setTimeout(countdown, 1000);
+    }
+    function updateProgress() {
+        var ul = document.getElementById("pie");
+        var node = new ListItem(childNum);
+        ul.appendChild(node);
+        var skew = (90 - centralAngle);
+        var rotateChild = -(90 - centralAngle / 2) + "deg";
+        node.style.setProperty('--transformSector', ("rotate(" + (((childNum) * centralAngle) - 10) + "deg) skew(" + skew + "deg)"))
+        node.firstChild.style.setProperty('--transformContent', ("skew(" + -skew + "deg) rotate(" + rotateChild + ") scale(1)"))
+    }
+    function ListItem(i) {
+        var node = document.createElement("li");
+        node.classList.add("spin-sector");
+        var insideDiv = document.createElement("div");
+        insideDiv.classList.add("content");
+        insideDiv.dataset.number = i;
+        node.appendChild(insideDiv);
+        return (node);
+    }
+    function reset() {
+        keepCounting = -1;
+        clearTimeout(myTimer);
+        var div = document.getElementById("pie");
+        while (div.firstChild) {
+            div.removeChild(div.firstChild);
+        }
+        interval = 0;
+        childNum = 0;
+        centralAngle = 0;
+        counter = 0;
+    }
+    function pause() {
+        clearTimeout(myTimer);
+    }
+    function resume() {
+        countdown()
+    }
+</script>

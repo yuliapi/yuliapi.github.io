@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="general.css">
+    <script src="script/helper.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -46,7 +47,7 @@
                     <li><a class="text-uppercase" href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-default navbar-btn print-button pull-right"><span class="glyphicon glyphicon-print"></span></button>
+
         </div>
     </nav>
     <!--About me-->
@@ -60,10 +61,10 @@
         <div class="row space-after">
             <div class="col-md-12">
                 <figure class="col-md-4 about-gallery">
-                    <a class="block" href="#portfolio"></a>
+                    <a class="block" href="#skills"></a>
                     <picture>
                         <source srcset="images/carpenter-720x360.jpg" media="(max-width: 991px) and (min-width: 450px)">
-                        <img class="img-responsive string" src="images/carpenter-400x200.jpg" alt="background img">
+                        <img class="img-responsive string" src="images/carpenter-400x200.jpg" alt="background-img">
                     </picture>
                     <figcaption class="text-center">
                         <div class="center">
@@ -75,7 +76,7 @@
                 <figure class="col-md-4 about-gallery">
                     <picture>
                         <source srcset="images/lighting-720x360.jpg" media="(max-width: 991px) and (min-width: 450px)">
-                        <img class="img-responsive string" src="images/lighting-400x200.jpg" alt="background img">
+                        <img class="img-responsive string" src="images/lighting-400x200.jpg" alt="background-img">
                     </picture>
                     <figcaption class="text-center">
                         <div class="center">
@@ -84,8 +85,6 @@
                             <div class="social-links">
                                 <a href="#"><img src="images/linkedin_circle_gray.svg" alt="Linkedin" width="32" heihgt="32"></a>
                                 <a href="#"><img src="images/github_circle_gray.svg" alt="Github" width="32" heihgt="32"></a>
-                                <a href="#"><img src="images/skype_circle_gray.svg" alt="Skype" width="32" heihgt="32"></a>
-                                <a href="#"><img src="images/facebook_circle_gray.svg" alt="facebook" width="32" heihgt="32"></a>
                             </div>
                         </div>
                     </figcaption>
@@ -94,11 +93,11 @@
                     <a class="block" href="#contact"></a>
                     <picture>
                         <source srcset="images/cityscape-720x360.jpg" media="(max-width: 991px) and (min-width: 450px)">
-                        <img class="img-responsive string" src="images/cityscape-400x200.jpg" alt="background img">
+                        <img class="img-responsive string" src="images/cityscape-400x200.jpg" alt="background-img">
                     </picture>
                     <figcaption class="opacity text-center">
                         <div class="center">
-                            <h4 class="text-uppercase">I live in Boston area</h4>
+                            <h4 class="text-uppercase">I live in Greater LA area</h4>
                             <h4><em>Where to find me?</em></h4>
                         </div>
                     </figcaption>
@@ -108,22 +107,22 @@
         <aside class="col-md-6 col-sm-6" id="skills">
             <h3>Technical skills</h3>
             <table class="table-skills">
-                <tr>
+                <tr id = "languages">
                     <td class="col-md-4 col-xs-12 column-1"><em>Languages:</em></td>
-                    <td class="col-md-8 col-xs-12">HTML5, CSS3 JavaScript</td>
+                    <!--<td class="col-md-8 col-xs-12">HTML5, CSS3 JavaScript</td>-->
                 </tr>
-                <tr>
+                <tr id = "frameworks">
                     <td class="col-md-4 col-xs-12 column-1"><em>Frameworks/Libraries: </em></td>
-                    <td class="col-md-8 col-xs-12">jQuery, Bootstrap</td>
+                    <!--<td class="col-md-8 col-xs-12">jQuery, Bootstrap, Grunt, Sass, CSS Grid, Nunjucks template langauge</td>-->
                 </tr>
-                <tr>
+                <tr id = "otherSkills">
                     <td class="col-md-4 col-xs-12 column-1"><em>Other:</em></td>
-                    <td class="col-md-8 col-xs-12">Git/Github</td>
+                    <!--<td class="col-md-8 col-xs-12">Git/Github</td>-->
                 </tr>
             </table>
         </aside>
         <main class="col-md-6 col-sm-6">
-            <h3>Header</h3>
+            <h3>About me</h3>
             <p class="text-justify text-indent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim. </p>
             <p class="text-justify text-indent">Praesent sit amet massa suscipit, auctor sapien non, egestas felis. Maecenas mattis aliquet est vitae dignissim. Suspendisse aliquam lacus mauris, id placerat felis faucibus quis. Suspendisse potenti. Etiam mattis, eros id porta iaculis, nisl purus dapibus leo, a lacinia tellus nunc sed nunc.</p>
         </main>
@@ -135,53 +134,54 @@
                 <h2 class="text-uppercase">Portfolio</h2>
             </div>
         </div>
-        <div class="row text-center portfolio-gallery">
-            <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/globe-world-light.jpg" alt="globe-world" data-toggle="modal" data-target="#projectP1">
-                <h3 class="text-uppercase text-medium">World-light</h3>
-                <a href="http://github/World-light">http://github/World-light</a>
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive  center-block" src="images/dices.jpg" alt="dices" data-toggle="modal" data-target="#projectP2">
-                <h3 class="text-uppercase text-medium">Dices</h3>
-                <a href="http://github/Dices">http://github/Dices</a>
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive  center-block" src="images/violet.jpg" alt="violet" data-toggle="modal" data-target="#projectP3">
-                <h3 class="text-uppercase text-medium">Violet</h3>
-                <a href="http://github/violet">http://github/violet</a>
-            </div>
-            <div class="col-md-12">
-                <div class="padded">
-                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseGallery" aria-expanded="false" aria-controls="collapseGallery" id="showMore">
-                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="row collapse collapse-content" id="collapseGallery">
-                    <div class="col-md-4">
-                        <img class="img-responsive center-block" src="images/cake.jpg" alt="Cake" data-toggle="modal" data-target="#projectP4">
-                        <h3 class="text-uppercase text-medium">confectioner</h3>
-                        <a href="http://github/confectioner">http://github/confectioner</a>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-responsive center-block" src="images/whimsical-forest.jpg" alt="whimsical-forest" data-toggle="modal" data-target="#projectP5">
-                        <h3 class="text-uppercase text-medium">Appify</h3>
-                        <a href="http://github/whimsical-forest">http://github/whimsical-forest</a>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-responsive center-block" src="images/spices.jpg" alt="spicy" data-toggle="modal" data-target="#projectP6">
-                        <h3 class="text-uppercase text-medium">spicy</h3>
-                        <a href="http://github/spicy">http://github/spicy</a>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="padded">
-                            <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseGallery" aria-expanded="true" aria-controls="collapseGallery" id="showLess">
-                                <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row text-center portfolio-gallery" id = "gallery">
+            <!--<div class="col-md-4">-->
+                <!--<img class="img-responsive center-block" src="images/globe-world-light.jpg" alt="globe-world" data-toggle="modal" data-target="#projectP1">-->
+                <!--<h3 class="text-uppercase text-medium">World-light</h3>-->
+                <!--<a href="http://github/World-light">http://github/World-light</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+                <!--<img class="img-responsive  center-block" src="images/dices.jpg" alt="dices" data-toggle="modal" data-target="#projectP2">-->
+                <!--<h3 class="text-uppercase text-medium">Dices</h3>-->
+                <!--<a href="http://github/Dices">http://github/Dices</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+                <!--<img class="img-responsive  center-block" src="images/time-counter.jpg" alt="violet" data-toggle="modal" data-target="#projectP3">-->
+                <!--<h3 class="text-uppercase text-medium">Time counter</h3>-->
+                <!--<a href="http://github/violet">http://github/violet</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-12">-->
+                <!--<div class="padded">-->
+                    <!--<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseGallery" aria-expanded="false" aria-controls="collapseGallery" id="showMore">-->
+                        <!--<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>-->
+                    <!--</button>-->
+                <!--</div>-->
+                <!--<div class="row collapse collapse-content" id="collapseGallery">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<img class="img-responsive center-block" src="images/cake.jpg" alt="Cake" data-toggle="modal" data-target="#projectP4">-->
+                        <!--<h3 class="text-uppercase text-medium">confectioner</h3>-->
+                        <!--<a href="http://github/confectioner">http://github/confectioner</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<img class="img-responsive center-block" src="images/whimsical-forest.jpg" alt="whimsical-forest" data-toggle="modal" data-target="#projectP5">-->
+                        <!--<h3 class="text-uppercase text-medium">Appify</h3>-->
+                        <!--<a href="http://github/whimsical-forest">http://github/whimsical-forest</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<img class="img-responsive center-block" src="images/spices.jpg" alt="spicy" data-toggle="modal" data-target="#projectP6">-->
+                        <!--<h3 class="text-uppercase text-medium">spicy</h3>-->
+                        <!--<a href="http://github/spicy">http://github/spicy</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-12">-->
+                        <!--<div class="padded">-->
+                            <!--<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseGallery" aria-expanded="true" aria-controls="collapseGallery" id="showLess">-->
+                                <!--<span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>-->
+                            <!--</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
         </div>
     </section>
     <!--Experience-->
@@ -191,57 +191,14 @@
                 <h2 class="text-uppercase">Experiense</h2>
             </div>
             <div class="col-md-8 table-style-content">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading wrapper" role="tab" id="headingOne">
-                            <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <table class="col-xs-12">
-                                    <tr>
-                                        <td class="term-ed ">
-                                            <h3>Jun/2015 - present</h3>
-                                        </td>
-                                        <td class="employer-ed">
-                                            <h3>Company 1</h3>
-                                            <p><em>front-end developer</em></p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </a>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <p>Ne dico utroque laboramus nam. Qui at lorem ceteros, congue imperdiet accommodare mei ut. Vivendo accusam reprimique sit no, cum invenire incorrupte ex. Modo legimus nam at, usu an reque referrentur. Postea percipit concludaturque sit ut, nam at omnes detracto appellantur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading wrapper" role="tab" id="headingTwo">
-                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <table class="col-xs-12">
-                                    <tr>
-                                        <td class="term-ed">
-                                            <h3>Dec/2014 - May/2015</h3>
-                                        </td>
-                                        <td class="employer-ed">
-                                            <h3>Company 1</h3>
-                                            <p><em>junior front-end developer</em></p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <p>In eos incorrupte delicatissimi, vix suas cotidieque ad, assum populo no cum. Ad congue graeco meliore vel, diceret sapientem id quo, ex eos eripuit fuisset adolescens. Nam an albucius delectus. Ad nulla erroribus adipiscing usu, vim eu probo quaeque graecis, vim erant eruditi invidunt ea. Eos an agam delectus lucilius.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="panel-group" id="experienceInfo" role="tablist" aria-multiselectable="true">
+
                 </div>
             </div>
         </div>
     </section>
     <!--References-->
-    <section class="container space-after">
+    <section class="container space-after hidden">
         <div class="row">
             <div class="col-md-12 text-center space-after">
                 <h2 class="text-uppercase">References</h2>
@@ -282,35 +239,8 @@
             <div class="col-md-12 text-center space-after">
                 <h2 class="text-uppercase">Education</h2>
             </div>
-            <div class="col-md-8 table-style-content">
-                <div class="wrapper">
-                    <div class="term-ed">
-                        <h5>Oct/2015 - May/2016</h5>
-                    </div>
-                    <div class="employer-ed">
-                        <h5>Udacity Front-End Web Developer Nanodegree Program</h5>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="term-ed">
-                        <h5>Sep/2003 - Feb/2005</h5>
-                    </div>
-                    <div class="employer-ed">
-                        <h5>The National Technical University of Ukraine “Kyiv Polytechnic Institute”</h5>
-                        <p><small>Master degree</small></p>
-                        <p><small><em>Metal Science</em></small></p>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="term-ed">
-                        <h5>Sep/1999 - Jun/2003</h5>
-                    </div>
-                    <div class="employer-ed">
-                        <h5>The National Technical University of Ukraine “Kyiv Polytechnic Institute”</h5>
-                        <p><small>Bachelor degree</small></p>
-                        <p><small><em>Metal Science</em></small></p>
-                    </div>
-                </div>
+            <div class="col-md-8 table-style-content" id="educationInfo">
+
             </div>
         </div>
     </section>
@@ -352,88 +282,24 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="projectP1" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-responsive center-block" src="images/globe-world-light.jpg" alt="globe-world" height="400">
-                    <p class="text-justify text-indent"> Lorem ipsum dolor sit amet, et natum fuisset sea. Dolores detracto evertitur eu nam. Nostro cotidieque cum et, ea everti viderer ancillae sit. Cu elit ludus eripuit mea. No nec solet causae saperet. Ex homero singulis nam.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="projectP2" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-responsive center-block" src="images/dices.jpg" alt="dices" height="400">
-                    <p class="text-justify text-indent"> Lorem ipsum dolor sit amet, et natum fuisset sea. Dolores detracto evertitur eu nam. Nostro cotidieque cum et, ea everti viderer ancillae sit. Cu elit ludus eripuit mea. No nec solet causae saperet. Ex homero singulis nam.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <template id='modal-template'>
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img class="img-responsive center-block" src="" alt="" height="400">
+                        <p class="text-justify text-indent">%description%</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="modal fade" id="projectP3" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-responsive center-block" src="images/violet.jpg" alt="violet" height="400">
-                    <p class="text-justify text-indent">Lorem ipsum dolor sit amet, et natum fuisset sea. Dolores detracto evertitur eu nam. Nostro cotidieque cum et, ea everti viderer ancillae sit. Cu elit ludus eripuit mea. No nec solet causae saperet. Ex homero singulis nam.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="projectP4" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-responsive center-block" src="images/cake.jpg" alt="Cake" height="400">
-                    <p class="text-justify text-indent"> Lorem ipsum dolor sit amet, et natum fuisset sea. Dolores detracto evertitur eu nam. Nostro cotidieque cum et, ea everti viderer ancillae sit. Cu elit ludus eripuit mea. No nec solet causae saperet. Ex homero singulis nam.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="projectP5" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-responsive center-block" src="images/whimsical-forest.jpg" alt="whimsical-forest" height="400">
-                    <p class="text-justify text-indent"> Lorem ipsum dolor sit amet, et natum fuisset sea. Dolores detracto evertitur eu nam. Nostro cotidieque cum et, ea everti viderer ancillae sit. Cu elit ludus eripuit mea. No nec solet causae saperet. Ex homero singulis nam.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="projectP6" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-responsive center-block" src="images/spices.jpg" alt="spicy" height="400">
-                    <p class="text-justify text-indent"> Lorem ipsum dolor sit amet, et natum fuisset sea. Dolores detracto evertitur eu nam. Nostro cotidieque cum et, ea everti viderer ancillae sit. Cu elit ludus eripuit mea. No nec solet causae saperet. Ex homero singulis nam.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    </template>
     <!--JavaScripts-->
     <script src="jquery/jquery-2.1.4.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="script/content.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $("#myCarousel").on("slide.bs.carousel", function() {
