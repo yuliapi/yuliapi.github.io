@@ -47,6 +47,29 @@ a:focus {
     text-indent: 2em;
 }
 
+#back-to-top {
+display: none;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin: 6px;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: gainsboro;
+    color: rgba(0, 0, 0, 0.67);
+    opacity: 0.6;
+}
+#back-to-top a {
+    display: block;
+}
+#back-to-top span {
+   font-size: 1.5em;
+    margin: 20%
+}
 /*header styles*/
 header img {
     margin-top: 20px;
@@ -55,7 +78,10 @@ header img {
 header hr {
     border-top: 2px solid #bcbbbb;
 }
+.anchor {
+    position: absolute;
 
+}
 /*navigation styles*/
 .navbar-nav {
     margin: 0;
@@ -92,6 +118,7 @@ nav a {
 .navbar-toggle {
     margin-left: 15px;
 }
+
 
 
 /*about section styles*/
@@ -161,14 +188,46 @@ main {
 
 /*portfolio styles*/
 .portfolio-gallery a {
-    display: inline-block;
+    display: block;
     margin-bottom: 15px;
 }
 
 .portfolio-gallery img {
     width: 360px;
+    cursor: pointer;
 }
 
+.portfolio-gallery .image-wrapper {
+    position: relative;
+    height: 240px;
+}
+.portfolio-gallery .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(161, 161, 161, 0.85);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+.portfolio-gallery .image-wrapper:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.overlay-inner {
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.overlay-inner a {
+    color: inherit;
+}
 @media screen and (max-width: 991px) {
     .portfolio-gallery h3 {
         margin: 5px 0;
@@ -275,8 +334,7 @@ main {
     display: inline-block;
     vertical-align: bottom;
 }
-
-/*Contact*/
-.contact {
-    margin: 0 2% 0 14.666667%;
+.contact img:hover {
+    border: 2px inset gray
 }
+

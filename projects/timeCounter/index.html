@@ -20,7 +20,6 @@
         <span>by</span>
         <select id="countInterval">
             <option value="1">1 second</option>
-            <option value="2">2 seconds</option>
             <option value="3">3 seconds</option>
             <option value="5">5 seconds</option>
         </select>
@@ -84,7 +83,7 @@
         if (selectedTime === 0) {
             var text = "done!";
             document.getElementById("time").innerHTML = text.charAt(0).toUpperCase() + text.slice(1);
-            document.getElementById("btn-holder").classList.add("invisible")
+            document.getElementById("btn-holder").classList.add("invisible");
             keepCounting = -1;
             return
         }
