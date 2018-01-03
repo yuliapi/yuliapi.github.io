@@ -17,8 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-    <link rel="stylesheet" href="../css/bootstrap-clockpicker.css">
-    
+
     <script src="https://use.fontawesome.com/ee57c8a0cc.js"></script>
 
 
@@ -104,11 +103,13 @@
             <li class="nav-item sidebar aside-find bg-primary" data-id="find">
         
 
-        <a href="user-find.html" class="btn btn-aside px-0">
+        <a href="index.html" class="btn btn-aside px-0" style="position: relative">
+            <div class= "pt-2" style="box-sizing: content-box; height: 48px;">
+                <i class="fa fa-search fa-3x">
+                </i>
+            </div>
 
-            <i class="fa fa mt-2 fa-search">
-            </i><br/>
-            Find
+            <p style="position: static; top: 0px;">Find</p>
 
         </a>
         </li>
@@ -122,11 +123,13 @@
 
         
 
-        <a href="user-todo.html" class="btn btn-aside px-0">
+        <a href="user-todo.html" class="btn btn-aside px-0" style="position: relative">
+            <div class= "pt-2" style="box-sizing: content-box; height: 48px;">
+                <i class="fa fa-space-shuttle fa-3x">
+                </i>
+            </div>
 
-            <i class="fa mt-2 fa-space-shuttle">
-            </i><br/>
-            My jobs
+            <p style="position: static; top: 0px;">My jobs</p>
 
         </a>
         </li>
@@ -140,25 +143,13 @@
 
         
 
-        <a href="user-helpme.html" class="btn btn-aside px-0">
+        <a href="user-helpme.html" class="btn btn-aside px-0" style="position: relative">
+            <div class= "pt-2" style="box-sizing: content-box; height: 48px;">
+                <i class="fa fa-bath fa-3x">
+                </i>
+            </div>
 
-            <i class="fa mt-2 fa-bath">
-            </i><br/>
-            Help me
-
-        </a>
-        </li>
-
-    
-        
-            <li class="nav-item sidebar aside-meetup bg-primary" data-id="meetup">
-        
-
-        <a href="user-meetup.html" class="btn btn-aside px-0">
-
-            <i class="fa mt-2 fa-magnet">
-            </i><br/>
-            Playdates
+            <p style="position: static; top: 0px;">Help me</p>
 
         </a>
         </li>
@@ -175,11 +166,83 @@
                 <div class="col-6 col-sm-10 mx-auto ">
 
                     
-
+    
                         <!-- This block (and any other block) can be replaced using template inheritance, or leave the default content in -->
 
                     
+    <div class="btn-holder text-center">
+        
+    
+        
+            <button class="btn btn-primary  btn-border btn-custom btn-help mx-3 btnFind " type="button"
+                    data-toggle="collapse"
+                    data-target="#needHelpForm" aria-expanded="false"
+                    aria-controls="needHelpForm">
+                
+                    <i class="fa fa-bath fa-2x d-block" aria-hidden="true"></i>
+                
+                Help
+            </button>
+        
+    
+        
+            
+    <a class="btn btn-primary  btn-border btn-custom btn-help mx-3 btnFind "
+       href="find-job.html" >
+        <div class="d-flex h-100 w-100">
+            <div class="align-self-center m-auto">
+                
+                    <i class="fa fa-space-shuttle fa-2x d-block" aria-hidden="true"></i>
+                
+                <span class="">Job</span>
+            </div>
+        </div>
+    </a>
 
+
+
+        
+    
+
+    </div>
+    <div class="collapse" id="needHelpForm">
+        <div class="btn-holder text-center">
+            
+                
+    <a class="btn btn-primary  btn-border btn-custom btn-help mx-3 btnFind "
+       href="find_babysitting.html" >
+        <div class="d-flex h-100 w-100">
+            <div class="align-self-center m-auto">
+                
+                    <i class="fa fa fa-cubes fa-2x d-block" aria-hidden="true"></i>
+                
+                <span class="">Babysitting</span>
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a class="btn btn-primary  btn-border btn-custom btn-help mx-3 btnFind "
+       href="find_transportation.html" >
+        <div class="d-flex h-100 w-100">
+            <div class="align-self-center m-auto">
+                
+                    <i class="fa fa fa-subway fa-2x d-block" aria-hidden="true"></i>
+                
+                <span class="">Transport</span>
+            </div>
+        </div>
+    </a>
+
+            
+        </div>
+    </div>
+    <div class="collapse" id="playdateForm">
+        <div class="btn-holder text-center">
+            
+        </div>
+    </div>
 
 
                 </div>
@@ -197,29 +260,22 @@
     
         <li class="nav-item sidebar">
             <a href="find.html" class="btn btn-aside">
-                <i class = "fa fa mt-2 fa-search"></i><br/>
+                <i class = "fa fa-search"></i><br/>
                 find
             </a>
         </li>
     
         <li class="nav-item sidebar">
             <a href="my-todo-list.html" class="btn btn-aside">
-                <i class = "fa mt-2 fa-space-shuttle"></i><br/>
+                <i class = "fa fa-space-shuttle"></i><br/>
                 my-todo-list
             </a>
         </li>
     
         <li class="nav-item sidebar">
             <a href="help-me.html" class="btn btn-aside">
-                <i class = "fa mt-2 fa-bath"></i><br/>
+                <i class = "fa fa-bath"></i><br/>
                 help-me
-            </a>
-        </li>
-    
-        <li class="nav-item sidebar">
-            <a href="meetup.html" class="btn btn-aside">
-                <i class = "fa mt-2 fa-magnet"></i><br/>
-                meetup
             </a>
         </li>
     
@@ -421,8 +477,7 @@
 
 
     <script>
-
-
+        makeActive('aside-find');
     </script>
 
 
