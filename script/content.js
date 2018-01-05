@@ -121,7 +121,8 @@ var experience = {
             "from": "Oct/2003",
             "till": "May/2004",
             "company": "Paton Institute of Electrical Welding",
-            "position": "Engineering technician"
+            "position": "Engineering technician",
+            "responsibilities": ["taking part in planning of scientific experiments", "lab works(preparation of test samples)", "assisting in experiments and collecting results"]
         }
     },
     display: function () {
