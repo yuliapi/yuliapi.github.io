@@ -237,9 +237,10 @@ function Panel(name, content) {
         $(list).appendTo(description);
 
     }
-
-    var text = HTMLparagraph.replace(data, content.description);
-    $(text).appendTo(description);
+    if (content.description && content.description.length) {
+        var text = HTMLparagraph.replace(data, content.description);
+        $(text).appendTo(description);
+    }
     $(description).appendTo(collapseModule);
     table.appendTo(btnCollapse);
     btnCollapse.appendTo(panelHead);
