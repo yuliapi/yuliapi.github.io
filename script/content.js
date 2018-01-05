@@ -3,7 +3,9 @@ var data = '%data%';
 var contacts = {
     "keys": {
         ".linkedin": "https://www.linkedin.com/in/yuliapi/",
-        ".github": "https://github.com/yuliapi"
+        ".github": "https://github.com/yuliapi",
+        ".email-contact": "yulia.pi@gmail.com",
+        ".phone-contact": "978-810-1047"
     },
 
     display: function () {
@@ -12,10 +14,16 @@ var contacts = {
             if (contacts.keys.hasOwnProperty(property)) {
                 arr = $(property);
                 for (var i = 0; i < arr.length; i++) {
-                    arr[i].href = contacts.keys[property];
-
+                    if (property.indexOf("contact") === -1) {
+                        arr[i].href = contacts.keys[property];
+                    } else {
+                        $(arr[i]).html(contacts.keys[property]);
+                    }
                 }
+
+
             }
+
         }
     }
 };
@@ -91,26 +99,36 @@ var projects = {
 };
 var experience = {
     "keys": {
-        "job1": {
+        // "job3": {
+        //     "from": "May/2015",
+        //     "till": "present",
+        //     "company": 'Self-employed',
+        //     "position": "Frontend developer",
+        //     "responsibilities": ["collecting and analyzing requirements",
+        //         "setting and negotiation features for minimum value product", "creating visual mock-ups and requirements translation into working prototype using HTML, CSS and Javascript"],
+        //     "description": "Working prototype with documentation  which describes general application flows was delivered to product owner."
+        // },
+        "job2": {
             "from": "Feb/2005",
             "till": "Oct/2011",
             "company": 'State enterprise of a special instrumentation "Arsenal"',
-            "position": "Engineer",
-            "description": "trshstrhstrh"
+            "position": "Engineering Technologist",
+            "responsibilities": ["adapting of ERP(enterprise resource planning) system to the company needs",
+                "verification of product conformity to technological requirements", "establishing work order and the operating route for processing parts"],
+            "description": "In collaboration with other departments ERP system, primary designed for mass production, was adapted  to such Arsenal features as: low production volume, wide range and unique production. It gave our company more clear and efficient way to manage production cycle, optimize procurement planning."
         },
-        "job2": {
+        "job1": {
             "from": "Oct/2003",
             "till": "May/2004",
             "company": "Paton Institute of Electrical Welding",
-            "position": "Engineering technician",
-            "description": "trshstrhstrh"
+            "position": "Engineering technician"
         }
     },
     display: function () {
         var holder = $('#experienceInfo');
         for (var property in experience.keys) {
             if (experience.keys.hasOwnProperty(property)) {
-                var object = experience.keys[property]
+                var object = experience.keys[property];
                 var panel = new Panel(property, object);
                 holder.append(panel);
             }
@@ -186,7 +204,7 @@ function displayProjects(keys, holder) {
 
 }
 function image(data) {
-    var image = $(HTMLgalleryImage)
+    var image = $(HTMLgalleryImage);
     image.attr('src', data.src);
     image.attr('alt', data.alt);
     return image
@@ -201,10 +219,26 @@ function Panel(name, content) {
     btnCollapse.attr('href', "#collapse" + id);
     btnCollapse.attr("aria-controls", "collapse" + id);
     var table = Table(content, HTMLexperienceTerm, HTMLexperienceCompany, HTMLexperiencePosition);
-    var collapseModule = $(' <div id="" class="panel-collapse collapse" role="tabpanel">')
+    var collapseModule = $(' <div id="" class="panel-collapse collapse" role="tabpanel">');
     collapseModule.attr('id', "collapse" + id);
     collapseModule.attr("aria-labelledby", id);
-    var description = HTMLexperienseDescription.replace(data, content.description);
+    var description = $('<div class="panel-body"></div>');
+
+    if (content.responsibilities && content.responsibilities.length) {
+        var heading = $('<h4>Responsibilities</h4>');
+
+        var list = $('<ul></ul>');
+        for (var i = 0; i < content.responsibilities.length; i++) {
+            var item = HTMLlistItem.replace(data, content.responsibilities[i]);
+            list.append(item)
+        }
+        $(heading).appendTo(description);
+        $(list).appendTo(description);
+
+    }
+
+    var text = HTMLparagraph.replace(data, content.description);
+    $(text).appendTo(description);
     $(description).appendTo(collapseModule);
     table.appendTo(btnCollapse);
     btnCollapse.appendTo(panelHead);
@@ -213,8 +247,8 @@ function Panel(name, content) {
     return panel
 }
 function Table(content, t, c, pos) {
-    var table = $(' <table class="col-xs-12"></table>');
-    var tableRow = $('<tr></tr>')
+    var table = $('<table class="col-xs-12"></table>');
+    var tableRow = $('<tr></tr>');
     var term = t.replace(data, content.from + " - " + content.till);
     $(term).appendTo(tableRow);
     var company = $('<td class="employer-ed"></td>');

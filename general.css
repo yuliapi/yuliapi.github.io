@@ -78,6 +78,13 @@ header img {
 header hr {
     border-top: 2px solid #bcbbbb;
 }
+header p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+header p:nth-child(1) {
+    margin-right: 50px;
+}
 .anchor {
     position: absolute;
 

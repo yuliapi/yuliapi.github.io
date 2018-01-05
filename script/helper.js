@@ -10,9 +10,12 @@ var HTMLgalleryText = '<div style = "padding: 0 10px;"><p class="text-justify te
 var HTMLexperienceTerm =  '<td class="term-ed "><h3>%data%</h3></td>';
 var HTMLexperienceCompany = '<h3>%data%</h3>';
 var HTMLexperiencePosition = '<p><em>%data%</em></p>';
-var HTMLexperienseDescription = '<div class="panel-body"><p>%data%</p></div>';
+
 
 var  HTMLeducationTerm = ' <div class="term-ed"><h5>%data%</h5></div>';
 var HTMLeducationCompany = '<h5>%data%</h5>';
 var HTMLeducationPosition = '<p><small>%data%</small></p>';
 
+
+var HTMLlistItem = '<li>%data%</li>';
+var HTMLparagraph = '<p>%data%</p>';
