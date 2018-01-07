@@ -48,9 +48,9 @@ var skills = {
 };
 var summary = {
     "text": {
-        "paragraph1": "I started my career in engineering back in 2005 in R&D company Kyiv Arsenal. Our team worked on various projects including space and military industries at that time. I've got a phenomenal experience in design and implementation of full process of product development in the industry. I'm grateful to all my mentors and coworkers for opportunity of learning and contribution to our goals.",
-        "paragraph2": "Being in mechanical engineering for a while, I made a shift to software engineering. My passion is Front-end web development where I can continue create new products and be impactful team player.",
-        "paragraph3": "Main area of my interest is implementation of products that can help other people like me in their everyday life, be happier human being."
+        "paragraph1": "I started my career in engineering back in 2005 in R&D company Kyiv Arsenal. Our team worked on various projects including space and military industries at that time. I've got a phenomenal experience in design and implementation of the full process of product development in the industry. I'm grateful to all my mentors and coworkers for the opportunity of learning and contribution to our goals.",
+        "paragraph2": "Being in mechanical engineering for a while, I made a shift to software engineering. My passion is front-end web development where I can continue to create new products and be the impactful team player.",
+        "paragraph3": "The main area of my interest is the implementation of products that can help other people like me in their everyday life, be happier human being."
     },
     display: function () {
         var div = $('#summary');
@@ -61,7 +61,7 @@ var summary = {
             }
         }
     }
-}
+};
 
 var projects = {
     "keysMain": {
@@ -71,7 +71,7 @@ var projects = {
             "alt": "mamahelp-image",
             "gitLink": "https://github.com/yuliapi/mamahelp",
             "demo": "http://mamahelp.herokuapp.com/",
-            "description": "Working prototype for Beehelper project that covers authentication, help enrty creation, validation and list view. Form templates are Jade based and are served to the user with Django based backend."
+            "description": "The working prototype for Beehelper project that covers authentication, help-entry creation, validation and list view. Form templates are Jade based and are served to the user with Django based backend."
         },
         "project1": {
             "name": "Time counter",
@@ -87,7 +87,7 @@ var projects = {
             "alt": "beehelper image",
             "gitLink": "https://github.com/yuliapi/beehelper-prototype",
             "demo": "projects/beehelper-prototype/templates/index.html",
-            "description": "Prototype of online social networking resource. It is a result of general requirement collection phase and visializing of general application flows."
+            "description": "The prototype of online social networking resource. It is a result of general requirement collection phase and visualizing of general application flows."
         }
     },
     "keysOther": {},
@@ -99,30 +99,30 @@ var projects = {
 };
 var experience = {
     "keys": {
-        // "job3": {
-        //     "from": "May/2015",
-        //     "till": "present",
-        //     "company": 'Self-employed',
-        //     "position": "Frontend developer",
-        //     "responsibilities": ["collecting and analyzing requirements",
-        //         "setting and negotiation features for minimum value product", "creating visual mock-ups and requirements translation into working prototype using HTML, CSS and Javascript"],
-        //     "description": "Working prototype with documentation  which describes general application flows was delivered to product owner."
-        // },
+        "job3": {
+            "from": "May/2015",
+            "till": "present",
+            "company": 'Self-employed',
+            "position": "Frontend developer",
+            "responsibilities": ["collecting and analyzing requirements",
+                "setting and negotiation features for minimum value product", "creating visual mock-ups and requirements translation into working prototype using HTML, CSS and Javascript"],
+            "description": "Working prototype with documentation  which describes general application flows was delivered to product owner."
+        },
         "job2": {
             "from": "Feb/2005",
             "till": "Oct/2011",
             "company": 'State enterprise of a special instrumentation "Arsenal"',
             "position": "Engineering Technologist",
-            "responsibilities": ["adapting of ERP(enterprise resource planning) system to the company needs",
+            "responsibilities": ["adapting ERP(enterprise resource planning) system to the company needs",
                 "verification of product conformity to technological requirements", "establishing work order and the operating route for processing parts"],
-            "description": "In collaboration with other departments ERP system, primary designed for mass production, was adapted  to such Arsenal features as: low production volume, wide range and unique production. It gave our company more clear and efficient way to manage production cycle, optimize procurement planning."
+            "description": "In collaboration with other departments ERP system, primarily  designed for mass production, was adapted  to such Arsenal features as low production volume, wide range and unique production. It gave our company more clear and efficient way to manage production cycle, optimize procurement planning."
         },
         "job1": {
             "from": "Oct/2003",
             "till": "May/2004",
             "company": "Paton Institute of Electrical Welding",
             "position": "Engineering technician",
-            "responsibilities": ["taking part in planning of scientific experiments", "lab works(preparation of test samples)", "assisting in experiments and collecting results"]
+            "responsibilities": ["taking part in the planning of scientific experiments", "lab works(preparation of test samples)", "assisting in experiments and collecting results"]
         }
     },
     display: function () {
