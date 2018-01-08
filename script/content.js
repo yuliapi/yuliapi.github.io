@@ -106,7 +106,7 @@ var experience = {
             "position": "Frontend developer",
             "responsibilities": ["collecting and analyzing requirements",
                 "setting and negotiation features for minimum value product", "creating visual mock-ups and requirements translation into working prototype using HTML, CSS and Javascript"],
-            "description": "Working prototype with documentation  which describes general application flows was delivered to product owner."
+            "description": "Working on startup project of online social networking website(BeeHelper). As a result, I had created the working prototype with documentation which describes general application flows. Also, Mamahelp app, as a part of a prototype series of BeeHelper project, was created. Mamahelp serves the purpose to experiment with flows for managing of multi-steps forms and authentication. <br> More details, demo and sources of BeeHelper and Mamahelp are available in the profile section of this portfolio."
         },
         "job2": {
             "from": "Feb/2005",
