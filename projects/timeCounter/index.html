@@ -97,8 +97,8 @@
         ul.appendChild(node);
         var skew = (90 - centralAngle);
         var rotateChild = -(90 - centralAngle / 2) + "deg";
-        node.style.setProperty('--transformSector', ("rotate(" + (((childNum) * centralAngle) - 10) + "deg) skew(" + skew + "deg)"))
-        node.firstChild.style.setProperty('--transformContent', ("skew(" + (-skew + 5) + "deg) rotate(" + rotateChild + ") scale(1)"))
+        node.style.setProperty('--transformSector', ("rotate(" + (((childNum) * centralAngle) - 10) + "deg) skew(" + (skew)+ "deg)"))
+        node.firstChild.style.setProperty('--transformContent', ("skew(" + (-skew + 5) + "deg) rotate(" + rotateChild + ") scale(2)"))
     }
     function ListItem(i) {
         var node = document.createElement("li");
