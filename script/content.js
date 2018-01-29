@@ -103,9 +103,8 @@ var projects = {
             "src": "images/myGallery.jpg",
             "alt": "project image",
             "gitLink": "https://github.com/yuliapi/myGallery-layout",
-            "demo": "https://yuliapi-gallery.herokuapp.com/gallery.html",
-            "description": "Gallery template backed by RESTful API, Node.js and PostgreSQL database for persistence layer"
-        }
+            "demo": "https://yuliapi-gallery.herokuapp.com/",
+            "description": "Template backed by Node.js RESTful API and PostgreSQL persistence layer. Gallery layout built with plain Javascript and CSS."   }
     },
     // "keysOther": {
     //
