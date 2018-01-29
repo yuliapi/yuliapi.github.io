@@ -103,7 +103,7 @@ var projects = {
             "src": "images/myGallery.jpg",
             "alt": "project image",
             "gitLink": "https://github.com/yuliapi/myGallery-layout",
-            "demo": "projects/beehelper-prototype/templates/index.html",
+            "demo": "https://yuliapi-gallery.herokuapp.com/gallery.html",
             "description": "Gallery template backed by RESTful API, Node.js and PostgreSQL database for persistence layer"
         }
     },
