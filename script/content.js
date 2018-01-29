@@ -104,7 +104,7 @@ var projects = {
             "alt": "project image",
             "gitLink": "https://github.com/yuliapi/myGallery-layout",
             "demo": "https://yuliapi-gallery.herokuapp.com/",
-            "description": "Template backed by Node.js RESTful API and PostgreSQL persistence layer. Gallery layout built with plain Javascript and CSS."   }
+            "description": "Template backed by Node.js RESTful API and PostgreSQL persistence layer. Gallery built with plain Javascript and CSS. The layout is cross-browser compatible, tested in latest versions of Chrome, Safari, Opera, Firefox and Microsoft Edge."   }
     },
     // "keysOther": {
     //
