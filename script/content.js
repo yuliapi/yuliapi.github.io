@@ -82,8 +82,6 @@ var projects = {
             "demo": "projects/timeCounter/index.html",
             "description": "It’s nice looking spinning progress counter, written in pure HTML, CSS and Javascript with no extra libs."
         },
-
-
         "project2": {
             "name": "mamaHelp CRUD prototype",
             "src": "images/mamahelp.jpg",
