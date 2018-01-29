@@ -65,13 +65,14 @@ var summary = {
 
 var projects = {
     "keysMain": {
-        "project2": {
-            "name": "mamaHelp CRUD prototype",
-            "src": "images/mamahelp.jpg",
-            "alt": "mamahelp-image",
-            "gitLink": "https://github.com/yuliapi/mamahelp",
-            "demo": "http://mamahelp.herokuapp.com/",
-            "description": "The working prototype for Beehelper project that covers authentication, help-entry creation, validation and list view. Form templates are Jade based and are served to the user with Django based backend."
+        "project5": {
+            "name": "Carousel",
+            "src": "images/carousel.jpg",
+            "alt": "carousel",
+            "gitLink": "",
+            "demo": "Coming soon",
+            "description": "Coming soon! Slideshow build with pure Javascript and CSS "
+
         },
         "project1": {
             "name": "Time counter",
@@ -81,6 +82,16 @@ var projects = {
             "demo": "projects/timeCounter/index.html",
             "description": "It’s nice looking spinning progress counter, written in pure HTML, CSS and Javascript with no extra libs."
         },
+
+
+        "project2": {
+            "name": "mamaHelp CRUD prototype",
+            "src": "images/mamahelp.jpg",
+            "alt": "mamahelp-image",
+            "gitLink": "https://github.com/yuliapi/mamahelp",
+            "demo": "http://mamahelp.herokuapp.com/",
+            "description": "The working prototype for Beehelper project that covers authentication, help-entry creation, validation and list view. Form templates are Jade based and are served to the user with Django based backend."
+        },
         "project3": {
             "name": "beehelper prototype",
             "src": "images/beehelper.jpg",
@@ -88,13 +99,23 @@ var projects = {
             "gitLink": "https://github.com/yuliapi/beehelper-prototype",
             "demo": "projects/beehelper-prototype/templates/index.html",
             "description": "The prototype of online social networking resource. It is a result of general requirement collection phase and visualizing of general application flows."
+        },
+        "project4": {
+            "name": "Blog display template",
+            "src": "images/myGallery.jpg",
+            "alt": "project image",
+            "gitLink": "https://github.com/yuliapi/myGallery-layout",
+            "demo": "projects/beehelper-prototype/templates/index.html",
+            "description": "Gallery template backed by RESTful API, Node.js and PostgreSQL database for persistence layer"
         }
     },
-    "keysOther": {},
+    // "keysOther": {
+    //
+    // },
     display: function () {
 
         displayProjects(projects.keysMain, '#gallery');
-        displayProjects(projects.keysOther, '#collapseGallery')
+        // displayProjects(projects.keysOther, '#second-row')
     }
 };
 var experience = {
@@ -162,6 +183,7 @@ var education = {
         }
     }
 };
+
 function addOverlay(demo, git) {
     var overlay = $('<div class="overlay"></div>');
     var inner = $('<div class="overlay-inner"></div>');
@@ -180,9 +202,9 @@ function displaySkills(array) {
     }
     return (text.slice(0, -2))
 }
+
 function displayProjects(keys, holder) {
     var div = $(holder);
-
     for (var property in keys) {
         if (keys.hasOwnProperty(property)) {
             var object = keys[property];
@@ -204,6 +226,7 @@ function displayProjects(keys, holder) {
     }
 
 }
+
 function image(data) {
     var image = $(HTMLgalleryImage);
     image.attr('src', data.src);
@@ -248,6 +271,7 @@ function Panel(name, content) {
     collapseModule.appendTo(panel);
     return panel
 }
+
 function Table(content, t, c, pos) {
     var table = $('<table class="col-xs-12"></table>');
     var tableRow = $('<tr></tr>');
@@ -262,6 +286,7 @@ function Table(content, t, c, pos) {
     tableRow.appendTo(table);
     return table;
 }
+
 contacts.display();
 skills.display();
 summary.display();
