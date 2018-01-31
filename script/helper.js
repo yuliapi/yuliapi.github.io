@@ -1,4 +1,4 @@
-var HTMLgalleryStart = '<div class = "col-md-4 project-entry"></div>';
+var HTMLgalleryStart = '<div class = "col-md-4 col-sm-6 col-xs-12 project-entry"></div>';
 var HTMLgalleryImage =  '<img class="img-responsive center-block">';
 var HTMLgalleryTitle = '<h3 class="text-uppercase text-medium">%data%</h3>';
 var HTMLgalleryLink = '<a class="inline-block"  target="_blank">%data%</a>';
