@@ -31,7 +31,7 @@ var projects = {
             "alt": "carousel",
             "gitLink": "https://github.com/yuliapi/carousel",
             "demo": "projects/carousel/index.html",
-            "description": "Slider, written on pure JS and designed to use as a component in future projects. Responsive and cross-browser compatible (Chrome, Safari, Firefox and Opera)."
+            "description": "Reusable slider component written with pure Javascript. Beautiful animation, rich user experience. Responsive and cross-browser compatible (Chrome, Safari, Firefox and Opera)."
         },
         "project4": {
             "name": "Blog display template",
