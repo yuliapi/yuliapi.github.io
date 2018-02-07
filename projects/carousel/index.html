@@ -19,6 +19,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen" rel="stylesheet">
     <link rel="icon" href="images/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/carousel-carousel@latest/css/carousel-carousel.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/carousel-carousel@latest/js/dist/carousel-carousel.min.js"></script>
 
 </head>
 
@@ -108,9 +111,12 @@
     </div>
 </div>
 
-
-
-<script src="bundle.js"></script>
+<script>
+  window.onload = function () {
+      let myCarousel = new Carousel(document.getElementById('myCarousel'));
+      myCarousel.activate()
+  };
+</script>
 
 
 </body>
