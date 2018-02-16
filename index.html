@@ -21,101 +21,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,100,700,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="general.css">
-    <script src="script/helper.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-<!--Header-->
-<div id="back-to-top" title="Go top">
-    <a href="#">
-        <span class="glyphicon glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-    </a>
+<div class="bg-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="landing-content col-12">
+                <div class="svg-wrapper" id="animatedLetters">
+                    <svg id="ip" xmlns="http://www.w3.org/2000/svg" height="400px">
+                        <path class="path path-1" d="M 20,55 l 0,340"/>
+                        <path class="path path-2" d="M 50,395 l 0,-350 C290,10 280,280 50,250"/>
+                        <line id="dot" class="path path-3" x1="20" y1="30" x2="20" y2="30"/>
+                    </svg>
 
-
-</div>
-<div class="container">
-    <header class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-2 logo-holder">
-            <svg height="100" width="100">
-                <text x="20" y="100" fill="#f49542" font-size="100">i</text>
-                <text x="40" y="100" fill="#f441af" font-size="80">P</text>
-                Sorry, your browser does not support inline SVG.
-            </svg>
-        </div>
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-10 text-right text-uppercase">
-            <h1 class="text-thin">Iuliia Pishchulina</h1>
-            <h4>Front-end developer</h4>
-        </div>
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <hr>
-        </div>
-    </header>
-</div>
-
-<!--About me-->
-<section class="container space-after" id="portfolio">
-    <div class="row text-center portfolio-gallery" id="gallery">
-        <div class="col-md-12">
-            <div class="padded invisible">
-                <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseGallery"
-                        aria-expanded="false" aria-controls="collapseGallery" id="showMore">
-                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="row collapse" id="collapseGallery">
-
-                <div class="col-md-12">
-                    <div class="padded">
-                        <button type="button" class="btn btn-default" data-toggle="collapse"
-                                data-target="#collapseGallery" aria-expanded="true" aria-controls="collapseGallery"
-                                id="showLess">
-                            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-                        </button>
+                </div>
+                <div class="typing-text hide" id="type">
+                    <p>&#10100;<span id="text" class="text-span"></span><span id="cursor" class="cursor-span"></span>&#10101;
+                    </p>
+                </div>
+                <button class="skip my-button" id="skip" onclick="skipAnimation(this)">Skip()</button>
+                <div class="row ">
+                    <div class="col-12 d-sm-flex justify-content-center">
+                        <a href="about.html" class="my-button hide ">&#10094;More about iP /&#10095;</a>
+                        <a href="projects.html" class="my-button hide">&#10094;iP projects /&#10095;</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="contacts">
-    <div class="container-fluid">
-        <div class="row ">
-            <div class="col-xs-12 text-center my-contacts">
-                <div class="wrapper">
-                    <p>yulia.pi@gmail.com</p>
-                    <a href="https://www.linkedin.com/in/yuliapi/">https://www.linkedin.com/in/yuliapi/</a>
-                </div>
 
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<!--JavaScripts-->
-<script src="jquery/jquery-2.1.4.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-
-<script src="script/content.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#myCarousel").on("slide.bs.carousel", function () {
-            console.log("Sliding instruction Received!");
-        });
-        $("#myCarousel").on("slid.bs.carousel", function () {
-            console.log("Sliding over!");
-        });
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    });
-    $(window).scroll(function () {
-        var height = $(window).scrollTop();
-        if (height > 100) {
-            $('#back-to-top').fadeIn();
-        } else {
-            $('#back-to-top').fadeOut();
-        }
-    });
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="general.js"></script>
+<script>
+    let start = setTimeout(LandingPage.animationStart, 250);
 </script>
 </body>
+</html>
