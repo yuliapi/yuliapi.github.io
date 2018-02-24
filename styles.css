@@ -277,6 +277,7 @@ header div {
     transform: rotate(-60deg);
 }
 
+/*******************************************************Hexagon logo*************************************/
 .svg-logo {
     position: absolute;
     left: 55px;
@@ -288,20 +289,128 @@ header div {
     transform: translateY(20px) translateX(-20px);
 }
 
-/****************************************************************************/
-.about-content {
+/******************************************************Hexagon-tabs**************************************/
+.action-tab {
+    position: relative;
+    height: 130px;
+    /*padding: 10px;*/
+}
+
+.action-tab .hexagon {
+    transform: scale(.5, .5);
+}
+
+.action-tab i {
+    color: rgba(244, 65, 175, 0.51);
+}
+
+.action-tab .tab-body {
+    border: 1px solid rgba(116, 119, 116, 0.2);
+    position: absolute;
+    top: 30px;
+    left: 106px;
+    right: 15px;
+    height: 60px;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.custom-tab {
+    position: relative;
+    height: 50px;
+
+}
+
+.custom-tab .hexagon {
+    transform: scale(.15, .15);
+    top: -35px;
+    left: -105px;
+}
+
+.custom-tab .hexagon,
+.custom-tab .hexagon:before,
+.custom-tab .hexagon:after,
+.custom-tab .hexagon-small,
+.custom-tab .hexagon-small:before,
+.custom-tab .hexagon-small:after {
+    background-color: #0001a9;
+
+}
+
+.custom-tab .tab-body {
+    border: 1px solid #0001a9;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    height: 37px;
+    padding: 10px 10px 10px 20px;
+}
+.custom-tab span {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #555755;
+}
+
+/***************************About page*************************************************/
+.content-wrapper {
     position: relative;
     color: #747774;
     margin-top: 20px;
     height: 100%;
+    margin-bottom: 20px;
 }
+.about-content {
+    font-family:  'Roboto', sans-serif;
+}
+.about-content h5 {
+    letter-spacing: 4px;
 
+}
 @media (min-width: 576px) {
-    .about-content {
+    .content-wrapper {
         margin-top: 0;
         border: 1px solid rgba(116, 119, 116, 0.5);
     }
 
+}
+
+.progress-table .progress-bar {
+    background-color: #747774;
+
+}
+
+@media (min-width: 576px) {
+    .progress-table {
+        padding-left: 200px;
+    }
+    .left-aside {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-center {
+        margin-top: 30px;
+    }
+    .progress-table {
+        padding: 0 260px 0 200px;
+    }
+    .right-aside {
+        max-width: 230px;
+        margin-top: -135px;
+    }
+    .left-aside {
+        max-width: 320px;
+        margin-top: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .about-center {
+        margin-top: 0;
+    }
 }
 
 .about-head {
@@ -316,42 +425,72 @@ header div {
     }
 }
 
-.photo {
-    background-color: #2aabd2;
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
+.avatar {
+    background-image: url("images/avatar.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /*border: 1px solid rgba(116, 119, 116, 0.5);*/
 }
-
-.head-info {
-    height: 120px;
-
-    width: calc(100% - 100px);
-    box-sizing: border-box;
-    padding: 10px 0 10px 15px;
+.about-find-me {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 5px 5px;
 }
-
-@media (min-width: 576px) {
-    .about-aside {
-        width: 170px;
-        max-width: 170px;
-    }
+.about-find-me a {
+    margin: 5px;
+    color: #f49542;
 }
-
-@media (min-width: 768px) {
-    .about-aside {
-        width: 200px;
-        max-width: 200px;
-    }
+.about-find-me a:hover,
+.about-find-me a:active {
+    color: #e9ecef;
 }
-
-.about-main .typing-text {
-    text-align: initial;
-    font-size: 24px;
-    margin: 0;
+.about-find-me i {
+    transform: scale(1.2)
 }
+/*.head-info {*/
+    /*height: 120px;*/
 
-/*portfolio styles*/
+    /*width: calc(100% - 100px);*/
+    /*box-sizing: border-box;*/
+    /*padding: 10px 0 10px 15px;*/
+/*}*/
+
+/*.about-aside table th,*/
+/*.about-aside table td {*/
+    /*padding-top: 0;*/
+    /*padding-bottom: 0;*/
+/*}*/
+
+/*.about-aside td {*/
+    /*padding-right: 0;*/
+/*}*/
+
+/*.about-aside th {*/
+    /*padding-left: 0;*/
+/*}*/
+
+/*.table-main th {*/
+    /*width: 150px;*/
+/*}*/
+
+/*.about-main-head {*/
+    /*!*border: 1px solid black;*!*/
+    /*height: 110px;*/
+    /*margin-left: 115px;*/
+    /*margin-top: 10px;*/
+    /*width: calc(100% - 115px);*/
+/*}*/
+
+/*.about-main .typing-text {*/
+    /*text-align: initial;*/
+    /*font-size: 24px;*/
+    /*margin: 0;*/
+/*}*/
+
+/***************************************************Portfolio page******************************************/
 .portfolio-gallery {
     font-family: Lato, sans-serif;
     font-weight: 300;
@@ -413,13 +552,6 @@ header div {
     color: inherit;
 }
 
-.padded {
-    position: relative;
-    height: 41px;
-    background-image: url("images/line.svg");
-    background-size: cover;
-}
-
 /***************************************Card***************************************/
 .project-entry {
     width: 370px;
@@ -449,4 +581,9 @@ header div {
 #back-to-top span {
     font-size: 1.5em;
     margin: 20%
+}
+
+.progress-bar {
+    background-color: #747774;
+    /*color: #f49542;*/
 }

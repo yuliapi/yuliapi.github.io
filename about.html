@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
 </head>
 
@@ -60,13 +61,12 @@
 
             </div>
         </header>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="about-content ml-sm-5">
+                    <div class="content-wrapper ml-sm-5 about-content " style="height: calc(100% - 50px)">
                         <div class="hexagon d-none d-sm-block">
                             <div class="hexagon-small">
-
                                 <div class="svg-logo">
                                     <a href="index.html">
                                         <svg height="150" width="100">
@@ -79,88 +79,229 @@
 
                             </div>
                         </div>
-                        <div class="container">
-                            <!--<div class="row">-->
-                            <!--<div class="col-12 about-head clearfix">-->
-                            <!--<div class="photo float-left">-->
+                        <div class="row flex-nowrap">
+                            <div class="col-12 progress-table">
+                                <table class="table">
+                                    <tr>
+                                        <td class="align-middle">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%"
+                                                     aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                    Growing potential
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
 
-                            <!--</div>-->
-                            <!--<div class="head-info float-left"></div>-->
-                            <!--</div>-->
-                            <!--</div>-->
+                                        <td class="align-middle">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 15%"
+                                                     aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                                    Experience
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td class="align-middle">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%"
+                                                     aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Focus
+                                                    on goal
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-12 no-gutters">
                             <div class="row">
-                                <div class="col-12 about-aside p-sm-2 p-md-3">
+                                <div class="col-12  left-aside order-4 order-sm-4 order-md-4 order-lg-1">
+                                    <div id="myCanvasContainer" class="text-center">
+                                        <h5 class="orange">Available Tools:</h5>
+                                        <canvas width="300" height="300" id="myCanvas">
+                                            <p>Anything in here will be replaced on browsers that support the canvas
+                                                element</p>
+                                            <ul>
+                                                <li><a href="">HTML5</a></li>
+                                                <li><a href="">CSS3</a></li>
+                                                <li><a href="">Javascript</a></li>
+                                                <li><a href="">ES6</a></li>
+                                                <li><a href="">React</a></li>
+                                                <li><a href="">Grunt</a></li>
+                                                <li><a href="">Git/Github</a></li>
+                                                <li><a href="">PostgreSQL</a></li>
+                                                <li><a href="">jQuery</a></li>
+                                                <li><a href="">Sass</a></li>
+                                                <li><a href="">Bootstrap</a></li>
+                                                <li><a href="">Koa</a></li>
+                                                <li><a href="">Knex.js</a></li>
+                                                <li><a href="">npm</a></li>
+                                                <li><a href="">Babel</a></li>
+                                                <li><a href=""> Nunjucks</a></li>
 
+                                            </ul>
+                                        </canvas>
+                                    </div>
                                 </div>
-                                <div class="col about-main">
-                                    <div class="typing-text show" >
-                                        <p>&#10100;<br>
-                                            <span class="text-span">
-                                                <span class="pink pl-3">"about"</span><span
-                                                    class="orange">: </span><span>&#10100;</span><br>
-                                                    <span class="pink pl-5">"name"</span><span class="orange">:</span>
-                                                        <span class="">"Iullia Pishculina"</span><span
-                                                    class="orange">,</span><br>
-                                                    <span class="pink pl-5">"occupation"</span><span class="orange">:
-                                                        </span><span class="">"engineering"</span><span
-                                                    class="orange">,</span><br>
-                                                    <span class="pink pl-5">"field"</span><span class="orange">:</span>
-                                                        <span class="">"front-end"</span><span
-                                                    class="orange">,</span><br>
-                                                <span class="pl-4">&#10101;</span><span class="orange">,</span><br>
-
-                                                <!--<span class="pink pl-3">"devTools"</span><span-->
-                                                    <!--class="orange">: </span><span>&#10100;</span><br>-->
-                                                  <!--<span class="pink pl-5">"languages"</span><span class="orange">:</span>-->
-                                                 <!--<span class="">[</span>-->
-                                            <!--<span class="">HTML</span><span class="orange">,</span>-->
-                                                <!--<span class="">CSS</span><span class="orange">,</span>-->
-                                                <!--<span class="">Javascript</span><span class="">]</span><span class="orange">,</span><br>-->
-                                                   <!--class="orange">: </span><span>&#10100;</span><br>-->
-                                            <!--<span class="pink pl-5">"lib&framevokks"</span><span class="orange">:</span>-->
-                                            <!--<span class="">[</span>-->
-                                            <!--<span class="">HTML</span><span class="orange">,</span>-->
-                                            <!--<span class="">CSS</span><span class="orange">,</span>-->
-                                            <!--<span class="">Javascript</span><span class="">]</span><span class="orange">,</span><br>-->
-                                            <!--<span class="pl-4">&#10101;</span><span class="orange">,</span><br>-->
-                                            <span class="pink pl-3">"find me"</span><span class="orange">:</span>
-                                            <span class="">[</span>
-                                                <a href="https://www.linkedin.com/in/yuliapi/">Linkedin</a><span
-                                                    class="orange">,</span>
-                                                <a href="https://github.com/yuliapi">Github repo</a><span
-                                                    class="orange">,</span>
-                                                <a href="https://www.npmjs.com/~yulia.pi">Node modules</a>
-
-                                                <span class="">]</span><span class="orange">,</span><br>
-                                            <span class="pink pl-3">"contact me"</span><span class="orange">:</span>
-                                            <span class="">"yulia.pi@gmail.com"</span><br>
-                                            </span>&#10101; <span class="orange">,</span></p>
-
-
+                                <div class="w-100 order-3 order-sm-3 order-md-3 d-block d-lg-none"></div>
+                                <div class="col about-center order-2 order-sm-2 order-md-1 order-lg-2" >
+                                    <div class="orange text-center" style="position: relative; top: 20px;">
+                                        <h5>Actions:</h5>
                                     </div>
 
-                                    <div class="typing-text show mt-5">
-                                        <p>&#10100; <small>'page-status': 'under development', 'end-date': 'asap'</small>&#10101;</p>
+                                    <div class="action-tab">
+                                        <div class="hexagon">
+                                            <div class="hexagon-small">
+
+                                            </div>
+                                            <i class="fas fa-cogs fa-7x"
+                                               style="position: absolute; left: 35px; z-index: 400; transform: scale(1)"></i>
+                                        </div>
+                                        <div class="tab-body d-flex align-items-center">
+                                            <p  class="mb-0">Turn visual mock-ups into the functioning webpages</p>
+                                        </div>
+                                    </div>
+                                    <div class="action-tab">
+                                        <div class="hexagon">
+                                            <div class="hexagon-small">
+
+                                            </div>
+                                            <i class="fas fa-puzzle-piece fa-7x"
+                                               style="position: absolute; left: 55px; z-index: 400; transform: scale(1)"></i>
+                                        </div>
+                                        <div class="tab-body d-flex align-items-center">
+                                            <p class="mb-0">     Develop application components</p>
+                                        </div>
+                                    </div>
+                                    <div class="orange text-center"  style="position: relative; top: -15px;">
+                                        <h5>Special ability:</h5>
+                                    </div>
+
+                                    <div class="action-tab" style="top: -33px;">
+                                        <div class="hexagon">
+                                            <div class="hexagon-small"></div>
+                                            <i class="fab fa-superpowers fa-7x"
+                                               style="position: absolute; left: 55px; z-index: 400; transform: scale(1)"></i>
+
+                                        </div>
+                                        <div class="tab-body py-2">
+
+                                            <p  class="mb-0">Problem decomposition.</p>
+                                            <p  class="mb-0"><em><small>Use any time during task</small></em></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 right-aside  order-1 order-sm-1 order-md-2 order-lg-3">
+
+                                    <div class="text-center mx-auto" style="width: 200px">
+                                        <h4 class="mb-0" style="font-weight: 600">Iuliia Pishchulina</h4>
+
+                                        <em class="d-inline-block">Self-starter, problem-solver </em>
+                                        <p class="mb-0" style="background-color: #747774; color: #f49542">Front-end developer</p>
+                                        <div class="col" style="background-color: #f49542;">Available for hire</div>
+                                    </div>
+                                    <div class="avatar mx-auto">
+                                        <div class="about-find-me text-end" style="width: 200px">
+                                            <a href="https://github.com/yuliapi" target="_blank"><i class="fab fa-git-square"></i></a>
+                                            <a href="https://www.linkedin.com/in/yuliapi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://www.npmjs.com/~yulia.pi" target="_blank"><i class="fab fa-npm"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="avatar-tabs mx-auto" style="width: 200px">
+                                        <div class="custom-tab">
+                                            <div class="hexagon">
+                                                <div class="hexagon-small"></div>
+                                                <svg height="120" width="210" style="position: absolute; z-index: 400;">
+                                                    <text x="70" y="100" fill="#f49542" font-size="120" font-weight="400">4</text>
+                                                    Sorry, your browser does not support inline SVG.
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex align-items-center tab-body">
+                                                <span>Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="custom-tab">
+                                            <div class="hexagon">
+                                                <div class="hexagon-small"></div>
+                                                <svg height="120" width="210" style="position: absolute; z-index: 400;">
+                                                    <text x="70" y="100" fill="#f49542" font-size="120" font-weight="400">2</text>
+                                                    Sorry, your browser does not support inline SVG.
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex align-items-center tab-body">
+                                                <span>Artist</span>
+                                            </div>
+                                        </div>
+                                        <div class="custom-tab">
+                                            <div class="hexagon">
+                                                <div class="hexagon-small"></div>
+                                                <svg height="120" width="210" style="position: absolute; z-index: 400;">
+                                                    <text x="70" y="100" fill="#f49542" font-size="120">1</text>
+                                                    Sorry, your browser does not support inline SVG.
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex align-items-center tab-body">
+                                                <span>Leader</span>
+                                            </div>
+                                        </div>
+                                        <div class="custom-tab">
+                                            <div class="hexagon">
+                                                <div class="hexagon-small"></div>
+                                                <svg height="120" width="210" style="position: absolute; z-index: 400;">
+                                                    <text x="70" y="100" fill="#f49542" font-size="120">3</text>
+                                                    Sorry, your browser does not support inline SVG.
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex align-items-center tab-body">
+                                                <span>Cooperation</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-
-
                 </div>
+
             </div>
-            <!--<div class="row"></div>-->
         </div>
     </div>
-
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.tagcanvas.min.js" type="text/javascript"></script>
 <script src="general.js"></script>
-<script>
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (!$('#myCanvas').tagcanvas({
+                textColour: '#555755',
+                outlineThickness: 0.5,
+                outlineColour: 'none',
+                maxSpeed: 0.06,
+                freezeActive: true,
+                shuffleTags: true,
+                shape: 'sphere',
+                zoom: 1,
+                noSelect: true,
+                textFont: null,
+                pinchZoom: true,
+                freezeDecel: true,
+                fadeIn: 3000,
+                initial: [0.3, -0.1],
+                depth: 0.8
+            })) {
+            // TagCanvas failed to load
+            $('#myCanvasContainer').hide();
+        }
+        // your other jQuery stuff here...
+    });
 </script>
 </body>
 </html>
