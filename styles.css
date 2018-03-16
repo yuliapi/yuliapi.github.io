@@ -85,6 +85,10 @@ body {
 }
 
 .my-button {
+    width: auto;
+    min-width: max-content;
+    height: 48px;
+    line-height: 48px;
     text-align: center;
     display: inherit;
     justify-content: inherit;
@@ -96,10 +100,11 @@ body {
     color: #747774;
     outline-color: #747774 !important;
     text-decoration: none !important;
-
 }
-
-@media (min-width: 576px) {
+.my-button:active {
+    outline: none;
+}
+@media (min-width: 768px) {
     .typing-text {
         margin: 30px 0;
         font-size: 32px;
@@ -107,7 +112,6 @@ body {
     }
 
     .my-button {
-        width: 350px;
         font-size: 32px;
         letter-spacing: 2px;
     }
@@ -307,15 +311,21 @@ header div {
 .action-tab .tab-body {
     border: 1px solid rgba(116, 119, 116, 0.2);
     position: absolute;
-    top: 30px;
-    left: 106px;
+    /*top: 30px;*/
+    left: 55px;
     right: 15px;
-    height: 60px;
+    height: 120px;
     padding: 10px;
+    padding-left: 60px;
     font-size: 18px;
     letter-spacing: 2px;
 }
+@media (min-width: 990px) and (max-width: 1200px) {
+    .action-tab .tab-body p {
+        font-size: 14px;
+    }
 
+}
 .custom-tab {
     position: relative;
     height: 50px;
@@ -347,6 +357,7 @@ header div {
     height: 37px;
     padding: 10px 10px 10px 20px;
 }
+
 .custom-tab span {
     font-size: 18px;
     letter-spacing: 2px;
@@ -361,13 +372,16 @@ header div {
     height: 100%;
     margin-bottom: 20px;
 }
+
 .about-content {
-    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 .about-content h5 {
     letter-spacing: 4px;
 
 }
+
 @media (min-width: 576px) {
     .content-wrapper {
         margin-top: 0;
@@ -385,6 +399,7 @@ header div {
     .progress-table {
         padding-left: 200px;
     }
+
     .left-aside {
         max-width: 320px;
         margin: 0 auto;
@@ -395,18 +410,22 @@ header div {
     .about-center {
         margin-top: 30px;
     }
+
     .progress-table {
         padding: 0 260px 0 200px;
     }
+
     .right-aside {
         max-width: 230px;
         margin-top: -135px;
     }
+
     .left-aside {
         max-width: 320px;
         margin-top: 50px;
     }
 }
+
 @media (min-width: 992px) {
     .about-center {
         margin-top: 0;
@@ -434,60 +453,65 @@ header div {
     position: relative;
     /*border: 1px solid rgba(116, 119, 116, 0.5);*/
 }
+
 .about-find-me {
     position: absolute;
     bottom: 0;
     padding: 0 0 5px 5px;
 }
+
 .about-find-me a {
     margin: 5px;
     color: #f49542;
 }
+
 .about-find-me a:hover,
 .about-find-me a:active {
     color: #e9ecef;
 }
+
 .about-find-me i {
     transform: scale(1.2)
 }
-/*.head-info {*/
-    /*height: 120px;*/
 
-    /*width: calc(100% - 100px);*/
-    /*box-sizing: border-box;*/
-    /*padding: 10px 0 10px 15px;*/
+/*.head-info {*/
+/*height: 120px;*/
+
+/*width: calc(100% - 100px);*/
+/*box-sizing: border-box;*/
+/*padding: 10px 0 10px 15px;*/
 /*}*/
 
 /*.about-aside table th,*/
 /*.about-aside table td {*/
-    /*padding-top: 0;*/
-    /*padding-bottom: 0;*/
+/*padding-top: 0;*/
+/*padding-bottom: 0;*/
 /*}*/
 
 /*.about-aside td {*/
-    /*padding-right: 0;*/
+/*padding-right: 0;*/
 /*}*/
 
 /*.about-aside th {*/
-    /*padding-left: 0;*/
+/*padding-left: 0;*/
 /*}*/
 
 /*.table-main th {*/
-    /*width: 150px;*/
+/*width: 150px;*/
 /*}*/
 
 /*.about-main-head {*/
-    /*!*border: 1px solid black;*!*/
-    /*height: 110px;*/
-    /*margin-left: 115px;*/
-    /*margin-top: 10px;*/
-    /*width: calc(100% - 115px);*/
+/*!*border: 1px solid black;*!*/
+/*height: 110px;*/
+/*margin-left: 115px;*/
+/*margin-top: 10px;*/
+/*width: calc(100% - 115px);*/
 /*}*/
 
 /*.about-main .typing-text {*/
-    /*text-align: initial;*/
-    /*font-size: 24px;*/
-    /*margin: 0;*/
+/*text-align: initial;*/
+/*font-size: 24px;*/
+/*margin: 0;*/
 /*}*/
 
 /***************************************************Portfolio page******************************************/
